@@ -23,7 +23,7 @@ const pass = process.env.DB_SECURITY;
 const url = `mongodb+srv://${user}:${pass}@instagram1.f5oh9pz.mongodb.net/?retryWrites=true&w=majority`
 const mongodbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/Instagram1';
 
-mongoose.connect(url)
+mongoose.connect(mongodbURI)
 .then(() => {
     // console.log("Database successfuly connected...");
 })
