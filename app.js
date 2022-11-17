@@ -79,7 +79,7 @@ app.post("/", async(req, res) => {
         // console.log(userData);
     
 
-        const alt = "The username you entered doesn't belong to an account. Please check your username and try again."
+        const alt = "Sorry, your password was incorrect. Please double-check your password."
         // res.redirect("/");
         res.render('index2', {altt : alt});
 
